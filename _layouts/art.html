@@ -7,11 +7,11 @@ layout: default
 <p class="meta">Posted {{ page.date | date: "%B %d, %Y" }} </p>
 <p>
   {% for item in page.tags %}
-  <a href="{{ site.baseurl}}{{site.url}}/art/{{item}}">{{ item }}</a>
+  <a href="{{site.url}}/art/{{item}}">{{ item }}</a>
   {% endfor %}
 </p>
 
-<img src="{{ site.baseurl}}{{page.fullimg}}" class="artfull" alt="{{ page.title }}">
+<img src="{{page.fullimg}}" class="artfull" alt="{{ page.title }}">
 
 <div id="post">
   {{ content }}

@@ -6,12 +6,12 @@ layout: default
 <p class="meta">Posted {{ page.date | date: "%B %d, %Y" }} </p>
 <p>
   {% for item in page.tags %}
-  <a href="{{ site.baseurl}}{{site.url}}/projects/{{item}}">{{ item }}</a>
+  <a href="{{site.url}}/projects/{{item}}">{{ item }}</a>
   {% endfor %}
 </p>
 
 <div id="post">
-  <img src="{{ site.baseurl}}{{page.thumb}}" class="project pic" alt="{{ page.title }}">{{ content }}
+  <img src="{{page.thumb}}" class="project pic" alt="{{ page.title }}">{{ content }}
 </div>
 
 {% if site.theme.disqus %}
