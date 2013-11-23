@@ -1,5 +1,8 @@
 # General Jekyll Config
+safe: true
+lsi: false
 pygments: true
+
 #url: http://cristen.thejonesgroup.org
 baseurl: /thewebsite
 lsi: false
@@ -40,7 +43,7 @@ theme:
   #Settings for prose.io
 prose:
   rooturl: '_posts'
-  siteurl: 'http://thecristen.github.io/thewebsite2013/'
+  siteurl: 'http://thecristen.github.io/thewebsite/'
   media: 'assets/img'
   metadata:
     _posts:
