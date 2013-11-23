@@ -1,6 +1,4 @@
 # General Jekyll Config
-safe: true
-lsi: false
 pygments: true
 
 #url: http://cristen.thejonesgroup.org
