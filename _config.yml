@@ -1,10 +1,10 @@
 # General Jekyll Config
 pygments: true
 
-#url: http://cristen.thejonesgroup.org
-baseurl: /thewebsite
+url: http://cristen.thejonesgroup.org
 lsi: false
 exclude: [LICENSE, CNAME, Rakefile, Gemfile, README.md, .gitignore]
+timezone: America/New_York
 permalink: /:categories/:title/
 category_dir: /
 category_title_prefix: 'All '
@@ -23,7 +23,6 @@ theme:
     linkedin: cristen
     email: cristen@outlook.com
     
-
   # "Hi, I'm _______"
   name: Cristen Jones
   email: cristen@outlook.com
