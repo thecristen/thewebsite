@@ -1,7 +1,7 @@
 # General Jekyll Config
 pygments: true
 #url: http://cristen.thejonesgroup.org
-baseurl: /thewebsite2013
+baseurl: /thewebsite
 lsi: false
 exclude: [LICENSE, CNAME, Rakefile, Gemfile, README.md, .gitignore]
 permalink: /:categories/:title/
