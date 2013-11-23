@@ -1,0 +1,22 @@
+<nav>
+  <h1>Hi.</h1>
+  <a href="{{ site.baseurl}}">
+    <img src="{{ site.baseurl}}/logo.png" id="logo" alt="Blog logo"/>
+  </a>
+  <h2>I'm <a href="{{ site.baseurl}}">{{ site.theme.name }}</a>.</h2>
+  <hr/>
+  <ul>
+  <p><i class="icon-info-sign"></i>  UX Assoc. at BrightQuant
+  <br/><i class="icon-globe"></i>  Cambridge, MA via NYC</p>
+  <p>I'm an amateur hustler, hipster and hacker, currently offering some cool services to nonprofits and social good organizations. I also write and make art.</p>
+
+  <p>{% for post in site.categories.special %}
+<i class="icon-star"></i> <a href="{{ site.baseurl}}{{ post.url }}"> {{ post.title }}</a><br>{% endfor %}</p>
+
+  <div>
+    <div id="social">
+      {% include social.html %}
+    </div>
+  </div>
+  </ul>
+</nav>

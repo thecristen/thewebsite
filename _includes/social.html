@@ -1,0 +1,49 @@
+Find me:
+<div id="stalker">
+  {% if site.theme.social.linkedin %}
+  <a title="{{ site.theme.social.linkedin }} on LinkedIn" href="http://www.linked.com/in/{{site.theme.social.linkedin}}">
+    <i class="icon-linkedin-sign"></i>
+  </a>
+  {% endif %}
+
+  {% if site.theme.social.github %}
+  <a title="{{ site.theme.social.github }} on Github" href="http://github.com/{{ site.theme.social.github }}">
+    <i class="icon-github-sign"></i>
+  </a>
+  {% endif %}
+
+  {% if site.theme.social.foursquare %}
+  <a title="{{ site.theme.social.foursquare }} on Foursquare" href="http://foursquare.com/{{site.theme.social.foursquare }}">
+    <i class="icon-foursquare"></i>
+  </a>
+  {% endif %}
+
+  {% if site.theme.social.twitter %}
+  <a title="{{ site.theme.social.twitter }} on Twitter" href="http://twitter.com/{{ site.theme.social.twitter }}">
+    <i class="icon-twitter-sign"></i>
+  </a>
+  {% endif %}
+
+  {% if site.theme.social.skype %}
+  <a title="{{ site.theme.social.skype }} on Skype" href="skype:{{site.theme.social.skype }}?userinfo">
+    <i class="icon-skype"></i>
+  </a>
+  {% endif %}
+
+  {% if site.theme.social.flickr %}
+  <a title="{{ site.theme.social.flickr }} on Flickr" href="http://www.flickr.com/people/{{site.theme.social.flickr}}">
+    <i class="icon-flickr"></i>
+  </a>
+  {% endif %}
+
+  <hr/>
+  {% if site.theme.social.email %}
+  <a title="Send email to {{ site.theme.social.email }}" href="mailto:{{site.theme.social.email}}">
+    <i class="icon-envelope"></i>
+  </a>
+  {% endif %}
+
+  <a title="RSS feed" id="rss" href="{{ site.baseurl}}/atom.xml">
+    <i class="icon-rss-sign"></i>
+  </a>
+</div>

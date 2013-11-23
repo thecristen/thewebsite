@@ -1,0 +1,88 @@
+# General Jekyll Config
+pygments: true
+#url: http://cristen.thejonesgroup.org
+baseurl: /thewebsite2013
+lsi: false
+exclude: [LICENSE, CNAME, Rakefile, Gemfile, README.md, .gitignore]
+permalink: /:categories/:title/
+category_dir: /
+category_title_prefix: 'All '
+
+# Theme customization - please change from the defaults!
+theme:
+  # Color for top bar, links, etc
+  highlight_color: '#fbae7a'
+
+  # Profile links on the left sidebar, leave blank to ignore
+  social:
+    github: thecristen
+    twitter: thecristen
+    foursquare: thecristen
+    skype: the.biggestdreamer
+    linkedin: cristen
+    email: cristen@outlook.com
+    
+
+  # "Hi, I'm _______"
+  name: Cristen Jones
+  email: cristen@outlook.com
+  tagline: "aspirating"
+
+  # Google Analytics key, leave blank to ignore
+  google_analytics_key: UA-35017145-1
+
+  # Toggle "Postings are my own" disclaimer in footer
+  # show_disclaimer: true
+
+  # Activate disqus comments by filling your shortname
+  disqus: cristenjones
+
+  #Settings for prose.io
+prose:
+  rooturl: '_posts'
+  siteurl: 'http://thecristen.github.io/thewebsite2013/'
+  media: 'assets/img'
+  metadata:
+    _posts:
+      - name: "title"
+        field:
+          element: "text"
+          label: "Title"
+          value: ""
+          type: "text"
+      - name: "layout"
+        field:
+          element: "multiselect"
+          label: "Select layout type (important!)"
+          placeholder: "Normal, art, or project?"
+          options:
+            - name: "Normal page"
+              value: "post"
+            - name: "Artwork page"
+              value: "art"
+            - name: "Project page"
+              value: "project"
+
+      - name: "categories"
+        field:
+          element: "multiselect"
+          label: "Category (very important!)"
+          placeholder: "Choose category"
+          options:
+            - name: "Normal blog post"
+              value: "blog"
+            - name: "Special featured post"
+              value: "special"
+            - name: "Essay post"
+              value: "essays"
+            - name: "Project page"
+              value: "projects"
+            - name: "Artwork page"
+              value: "art"
+
+      - name: "tags"
+        field:
+          element: "multiselect"
+          label: "Add Tags (optional)"
+          placeholder: "Choose Tags"
+          alterable: true
