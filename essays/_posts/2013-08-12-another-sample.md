@@ -1,9 +1,7 @@
 ---
-layout: post
-title: Writing is a virtue.
-categories:
-- blog
-tags: tag1 tag2 tag3
+layout: project
+title: Another sample
+thumb: /assets/img/conclave.png
 ---
 
 Tattooed roof party *vinyl* freegan single-origin coffee wayfarers tousled, umami yr 

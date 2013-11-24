@@ -162,6 +162,7 @@ nav hr {
 
 .sidebar {
   padding-top: 25px;
+  position: fixed;
 }
 
 .sidebar p {
@@ -177,6 +178,7 @@ nav hr {
   padding-left: 40px;
   padding-top: 25px;
   min-height: 400px;
+  float:right;
 }
 
 .footer {

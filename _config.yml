@@ -5,9 +5,9 @@ url: http://cristen.thejonesgroup.org
 lsi: false
 exclude: [LICENSE, CNAME, Rakefile, Gemfile, README.md, .gitignore]
 timezone: America/New_York
-permalink: /:categories/:title/
-category_dir: /
-category_title_prefix: 'All '
+#permalink: /:categories/:title/
+permalink: /:title/
+paginate_path: '/blog/page:num/'
 
 # Theme customization - please change from the defaults!
 theme:
@@ -36,3 +36,13 @@ theme:
 
   # Activate disqus comments by filling your shortname
   disqus: cristenjones
+
+# for the RSS generator plugin
+name: "Cristen Jones the website"          
+url: http://cristen.thejonesgroup.org         
+description:    # (optional) a description for the feed (if not specified will be generated from name)
+author: "Cristen Jones"         # (optional) the author of the site (if not specified will be left blank)
+copyright:      # (optional) the copyright of the feed (if not specified will be left blank)
+rss_path:       # (optional) the path to the feed (if not specified "/" will be used)
+rss_name:       # (optional) the name of the rss file (if not specified "rss.xml" will be used)
+rss_post_limit: 10 # (optional) the number of posts in the feed

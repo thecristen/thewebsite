@@ -1,10 +1,6 @@
 ---
-layout: project
-title: So much studio
-categories:
-- projects
-tags: tag1 tag2 tag3
-thumb: /assets/img/studio.png
+layout: post
+title: Another post
 ---
 
 Tattooed roof party *vinyl* freegan single-origin coffee wayfarers tousled, umami yr 

@@ -1,9 +1,6 @@
 ---
 layout: post
 title: NM
-categories:
-- blog
-tags: tag1 tag2 tag3
 ---
 
 Tattooed roof party *vinyl* freegan single-origin coffee wayfarers tousled, umami yr 

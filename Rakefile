@@ -32,7 +32,6 @@
 layout: post
 title: #{title}
 categories: blog #{Time.now.strftime('%Y')} #{Time.now.strftime('%m')}
-tags: addtags
 ---
 
 
@@ -42,8 +41,6 @@ tags: addtags
 ---
 layout: post
 title: #{title}
-categories:
-- essays
 ---
 
 
@@ -53,9 +50,6 @@ categories:
 ---
 layout: art
 title: #{title}
-categories:
-- art
-tags: addtags
 thumb: /assets/img/addimage.png
 fullimg: /assets/img/addimage-full.png
 ---
@@ -67,9 +61,6 @@ fullimg: /assets/img/addimage-full.png
 ---
 layout: project
 title: #{title}
-categories:
-- projects
-tags: addtags
 thumb: /assets/img/addprojectimg.png
 ---
 
@@ -81,8 +72,6 @@ thumb: /assets/img/addprojectimg.png
 ---
 layout: post
 title: #{title}
-categories: blog #{Time.now.strftime('%Y')} #{Time.now.strftime('%m')}
-tags: addtags
 ---
 
 

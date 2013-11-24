@@ -1,8 +1,6 @@
 ---
 layout: post
 title: "The Motivation Hacker"
-categories:
-- essays
 ---
 
 Somehting

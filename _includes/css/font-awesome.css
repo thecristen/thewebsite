@@ -503,8 +503,7 @@ a .icon-flip-vertical:before {
 .icon-tag:before {
   content: "\f02b";
 }
-.icon-tags:before {
-  content: "\f02c";
+.icon-  content: "\f02c";
 }
 .icon-book:before {
   content: "\f02d";
