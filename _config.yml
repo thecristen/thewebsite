@@ -46,3 +46,11 @@ copyright:      # (optional) the copyright of the feed (if not specified will be
 rss_path:       # (optional) the path to the feed (if not specified "/" will be used)
 rss_name:       # (optional) the name of the rss file (if not specified "rss.xml" will be used)
 rss_post_limit: 10 # (optional) the number of posts in the feed
+
+# for the Flickr gallery plugin
+flickr:
+  cache_dir:       ./_cache/flickr
+  api_key:          d467a05e2e58ba78421f5bcfce23bfef
+  shared_secret:    de7d9687c8c7bb18
+  access_token:     72157638149030196-037c1e0d48c78f38
+  access_secret:    2379ce51dda587d5

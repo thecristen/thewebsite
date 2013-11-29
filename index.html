@@ -32,4 +32,6 @@ layout: default
     {% for post in site.categories.art %}       
         <a title="{{ post.title }}" href="{{ post.url }}"><img src="{{post.thumb}}" class="artthumb" alt="{{ post.title }}"></a>
     {% endfor %}
+  <h3>Flickr art</h3>
+  {% flickr_photoset 72157630962374482 %}
 </div>
