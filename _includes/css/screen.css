@@ -74,6 +74,10 @@ img {
   margin-right: auto;
 }
 
+img.arts {
+display: inline-block;
+}
+
 ul.posts {
   margin-top: 0;
   list-style-type: none;

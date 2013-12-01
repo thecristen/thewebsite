@@ -26,12 +26,7 @@ layout: default
 </div>
   {% endfor %}
 
-
-
   <h2><i class="icon-picture"></i> Recent works of art</h2>
-    {% for post in site.categories.art %}       
-        <a title="{{ post.title }}" href="{{ post.url }}"><img src="{{post.thumb}}" class="artthumb" alt="{{ post.title }}"></a>
-    {% endfor %}
-  <h3>Flickr art</h3>
-  {% flickr_photoset 72157630962374482 %}
+  I draw sometimes. <a href="/art/">See here</a>
+  
 </div>
