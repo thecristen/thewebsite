@@ -3,9 +3,34 @@ layout: default
 title: Projects
 ---
 <div class="intro">Projects in various states of completion.</div>
-  <ul class="posts">
-    {% for post in site.categories.projects %}
-      <li><img src="{{site.url}}{{post.thumb}}"><span>{{ post.date | date: "%-d %B %Y" }}</span><a href="{{ post.url }}">{{ post.title }}</a> {{ post.excerpt }}</li>
-    {% endfor %}
-  </ul>
+
+{% for post in site.categories.projects %}
+<div class="project">
+	
+	<div class="projectpic" style="background-image: url(http://localhost:4000{{post.thumb}})"></div>
+  	<h1>
+  		<!-- links to external page if one is defined -->
+  		{% if post.external == blank or post.external == nil  %}
+  		<a href="{{ post.url }}">{{ post.title }}</a>
+  		{% else %}
+  		<a href="{{ post.external }}">{{ post.title }}  &nbsp; <i class="icon-long-arrow-right"></i></a>
+  		{% endif %}
+  	</h1>
+ 	<!-- if the post is short enough, just show the whole thing -->
+    {% if post.excerpt == post.content %}
+      {{ post.content }}
+
+    {% else %}
+    <!-- hack to add a read more link within the excerpt -->
+    {% capture postlink %}
+    {{ post.url | append: "><i class='icon-long-arrow-right'></i> keep reading</a>" | prepend: "<a href="""" }}
+    {% endcapture %}
+
+    {% assign blurb = post.excerpt | append: postlink %} 
+    
+    {{ blurb }}
+    {% endif %}
+ 	<br class="clearfloat">
+</div>  
+{% endfor %}
  

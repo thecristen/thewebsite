@@ -242,6 +242,7 @@ nav hr {
 .footer {
   text-align: center;
   margin: 0px;
+  margin-top:20px;
   width: 100%;
 }
 
@@ -277,10 +278,30 @@ nav hr {
 
 
 .project {
-width: 210px;
-padding-bottom:5px;
+padding:10px;
+font-size:14px;
 }
 
+.projectpic {
+  background-repeat: no-repeat;
+  width:200px;
+  height:200px;
+  background-size: cover;
+  float:right;
+  margin: 0px;
+  margin-left:15px;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+}
+/*
+.project p {
+  font-size:14px;
+}*/
+
+.clearfloat {
+  clear: both;
+}
 .pics {
   text-align:center;
 }
@@ -299,4 +320,23 @@ padding-bottom:5px;
   padding: 10px 0px 20px 0px;
   margin-bottom: 10px;
   border-bottom: 1px dotted #ddd;
+}
+
+span.essayheadline {
+  font-style: italic;
+  margin-top: -6px;
+}
+
+span.date {
+  font-family: "source-sans-pro", sans-serif;
+  font-size:80%;
+}
+
+div.excerpt p {
+  margin-bottom:0;
+}
+
+h2.posttitle {
+  margin-bottom:4px;
+  margin-top:-4px;
 }

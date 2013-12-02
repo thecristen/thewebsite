@@ -8,7 +8,7 @@ include: [.htaccess]
 timezone: America/New_York
 #permalink: /:categories/:title/
 permalink: /stream/:title/
-paginate: 3
+paginate: 10
 paginate_path: '/stream/:num/'
 
 #custom navigation, with associated font-awesome icons (3.2)
