@@ -1,7 +1,7 @@
 body {
   font-size: 16px;
   background-color: white;
-  color: #222222;
+  color: #3B3050;
   font-family: "adelle", serif;
   font-weight: 300;
   line-height: 23px;
@@ -43,6 +43,7 @@ ul {
 a {
   color: {{ site.theme.highlight_color }};
   text-decoration: none;
+  font-weight:600;
 }
 
 a:hover {
@@ -51,7 +52,7 @@ a:hover {
 }
 
 a:visited {
-  color: #a86;
+  color: #92BBE2;
 }
 
 div.currently {
@@ -63,7 +64,6 @@ div.intro {
   background-color:#EEE;
   padding:20px;
   text-align: center;
-  color:#753;
   font-size: 14px;
   font-style: italic;
   margin-bottom: 20px;
@@ -128,11 +128,6 @@ ul.posts span {
   padding-right: 8px;
   font-size: 16px;
   font-weight: 400;
-}
-
-.meta {
-  color: #aaa;
-  margin: 0 0 10px 0;
 }
 
 nav h1, nav h2 {
@@ -217,7 +212,6 @@ nav hr {
 #stalker a {
   width: 25px;
   float: left;
-  color: #000000;
 }
 
 #stalker i {
@@ -226,7 +220,6 @@ nav hr {
 
 #stalker a:hover {
   text-decoration: none;
-  color: {{ site.theme.highlight_color }};
 }
 
 .home {

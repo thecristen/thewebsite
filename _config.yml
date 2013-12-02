@@ -3,8 +3,7 @@ pygments: true
 
 url: http://cristen.thejonesgroup.org
 lsi: false
-exclude: [LICENSE, CNAME, Rakefile, Gemfile, README.md, .gitignore]
-include: [.htaccess]
+exclude: [LICENSE, CNAME, Rakefile, Gemfile, README.md, .gitignore.css]
 timezone: America/New_York
 #permalink: /:categories/:title/
 permalink: /stream/:title/
