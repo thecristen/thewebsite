@@ -59,6 +59,16 @@ div.currently {
   line-height:1.5;
 }
 
+div.intro {
+  background-color:#EEE;
+  padding:20px;
+  text-align: center;
+  color:#753;
+  font-size: 14px;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
 ul.links {
   list-style-type:none;
   margin:0;
@@ -112,21 +122,6 @@ ul.posts li {
   margin-bottom: 0px;
 }
 
-ul.posts-special {
-  margin-top: 0;
-  padding-right: 8px;
-  list-style-type: none;
-  margin-bottom: 10px;
-}
-
-ul.posts-special li {
-  line-height: 38px;
-  font-size: 24px;
-  font-weight: 700;
-  font-family: "source-sans-pro",sans-serif;
-  margin-bottom: 0px;
-}
-
 ul.posts span {
   font-family: "source-sans-pro",sans-serif;
   color: #789;
@@ -138,13 +133,6 @@ ul.posts span {
 .meta {
   color: #aaa;
   margin: 0 0 10px 0;
-}
-
-.site .footer {
-  font-size: 80%;
-  color: #666;
-  border-top: 4px solid #eee;
-  overflow: hidden;
 }
 
 nav h1, nav h2 {
@@ -207,17 +195,6 @@ nav hr {
   float:right;
 }
 
-.footer {
-  width: 100%;
-}
-
-.footer {
-  font-size: 80%;
-  color: #666;
-  border-top: 4px solid #EEE;
-  overflow: hidden;
-}
-
 .aside {
   font-size: 75%;
   color: #666;
@@ -262,10 +239,27 @@ nav hr {
   text-decoration: none;
 }
 
-.disclaimer p {
-  margin-top: 5px;
-  font-size: 11px;
+.footer {
   text-align: center;
+  margin: 0px;
+  width: 100%;
+}
+
+.footer p {
+  font-size: 14px;
+  font-weight:bold;
+  margin:8px;
+}
+
+.footer .disclaimer {
+  border-top: 4px solid #EEE;
+  overflow: hidden;
+}
+
+.footer .disclaimer p {
+  font-size: 80%;
+  color: #666;
+  font-weight:300;
 }
 
 .footnotes { 
@@ -287,9 +281,22 @@ width: 210px;
 padding-bottom:5px;
 }
 
-.pic {
-  padding: 10px;
-  padding-right: 20px;
-  display: inline;
-  float:left;
+.pics {
+  text-align:center;
+}
+
+.pagination {
+  text-align:center;
+  font-size: 16px;
+  color: #666;
+  margin-top:-10px;
+  padding:5px;
+  background-color: #EEE;
+  display:block;
+}
+
+.post-item {
+  padding: 10px 0px 20px 0px;
+  margin-bottom: 10px;
+  border-bottom: 1px dotted #ddd;
 }

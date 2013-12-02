@@ -2,9 +2,10 @@
 layout: default
 title: Projects
 ---
-
-  <ul id="book-posts" class="posts">
+<div class="intro">Projects in various states of completion.</div>
+  <ul class="posts">
     {% for post in site.categories.projects %}
-      <li><img src="{{site.url}}{{post.thumb}}"><span>{{ post.date | date: "%-d %B %Y" }}</span><a href="{{ post.url }}">{{ post.title }}</a> {{ post.content }}</li>
+      <li><img src="{{site.url}}{{post.thumb}}"><span>{{ post.date | date: "%-d %B %Y" }}</span><a href="{{ post.url }}">{{ post.title }}</a> {{ post.excerpt }}</li>
     {% endfor %}
   </ul>
+ 

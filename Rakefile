@@ -31,6 +31,7 @@
 ---
 layout: post
 title: #{title}
+headline: ADDLONGHEADLINE
 category: essays
 permalink: /essays/#{title.gsub(/\s/, '_').downcase}
 ---
@@ -64,7 +65,13 @@ category: blog
     end
     end
 
-  # invoke Sublime Text 2 to edit file
-  sh "subl #{path}"
-  
+
+  # open to edit file
+  yesopen = ask('Open now? [yes,no] ')
+  if yesopen == 'yes'
+    sh "open -a Mou #{path}"
+  else
+    puts "Done!"
+  end
+
   end
