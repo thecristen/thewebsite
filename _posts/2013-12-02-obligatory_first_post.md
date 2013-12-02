@@ -14,7 +14,7 @@ This is also my first "first" post since I've become a professional. Oddly enoug
 
 This website's template is a modified version of [Lagom](http://jekyllthemes.org/themes/lagom/). I built this website using [Jekyll](http://jekyllrb.com), the Ruby-based static site generator (according to [this page](http://yeswejekyll.com), even Obama used it! Though maybe that's not such a good compliment anymore). I liked the idea of hosting all my own content (which I do on [Webfaction](https://www.webfaction.com/?affiliate=cristen)), and I was sick of scouring the Internet for clean, simple Wordpress themes. 
 
-I'm more of a designer than a developer, so it's great to get such fine control over the templating. The tradeoff, I suppose, is writing way more Ruby than I ever wanted to, but I'm pretty happy with the result.
+I'm more of a designer than a developer (...maybe), so it's great to get such fine control over the templating. The tradeoff, I suppose, is writing way more Ruby than I ever wanted to, but I'm pretty happy with the result.
 
 If you find something broken and it really bothers you, feel free to [open up an issue](https://github.com/thecristen/thewebsite/issues) on Github.
 
