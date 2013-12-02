@@ -1,7 +1,8 @@
 ---
 layout: project
 title: Another sample
-thumb: /assets/img/conclave.png
+category: essays
+permalink: /essays/another-sample
 ---
 
 Tattooed roof party *vinyl* freegan single-origin coffee wayfarers tousled, umami yr 

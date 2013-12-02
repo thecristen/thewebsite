@@ -4,22 +4,39 @@ pygments: true
 url: http://cristen.thejonesgroup.org
 lsi: false
 exclude: [LICENSE, CNAME, Rakefile, Gemfile, README.md, .gitignore]
+include: [.htaccess]
 timezone: America/New_York
 #permalink: /:categories/:title/
-permalink: /:title/
-paginate_path: '/blog/page:num/'
+permalink: /blog/:title/
+paginate: 13
+paginate_path: '/blog/:num/'
+
+#custom navigation, with associated font-awesome icons (3.2)
+navigation:
+- text: projects
+  url: /projects/
+  icon: icon-beaker
+- text: live blog
+  url: /blog/
+  icon: icon-bullhorn
+- text: longer writing
+  url: /essays/
+  icon: icon-pencil
+- text: arbitrary art
+  url: /art/
+  icon: icon-picture
 
 # Theme customization - please change from the defaults!
 theme:
   # Color for top bar, links, etc
-  highlight_color: '#fbae7a'
+  highlight_color: '#E7AE65'
 
   # Profile links on the left sidebar, leave blank to ignore
   social:
     github: thecristen
     twitter: thecristen
     foursquare: thecristen
-    skype: the.biggestdreamer
+    # skype: the.biggestdreamer
     linkedin: cristen
     email: cristen@outlook.com
     
@@ -32,13 +49,13 @@ theme:
   google_analytics_key: UA-35017145-1
 
   # Toggle "Postings are my own" disclaimer in footer
-  # show_disclaimer: true
+  #show_disclaimer: true
 
   # Activate disqus comments by filling your shortname
   disqus: cristenjones
 
 # for the RSS generator plugin
-name: "Cristen Jones the website"          
+name: "Cristen Jones - The Website"          
 url: http://cristen.thejonesgroup.org         
 description:    # (optional) a description for the feed (if not specified will be generated from name)
 author: "Cristen Jones"         # (optional) the author of the site (if not specified will be left blank)

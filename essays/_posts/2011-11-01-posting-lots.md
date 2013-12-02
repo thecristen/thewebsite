@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Posting lots
+category: essays
+permalink: /essays/posting-lots
 ---
 
 Tattooed roof party *vinyl* freegan single-origin coffee wayfarers tousled, umami yr 

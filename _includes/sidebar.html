@@ -1,22 +1,30 @@
 <nav>
   <h1>Hi.</h1>
-  <a href="">
-    <img src="/logo.png" id="logo" alt="Blog logo"/>
+  <a href="/">
+    <img src="/logo.png" id="logo" alt="logo for cristen jones's website"/>
   </a>
-  <h2>I'm <a href="">{{ site.theme.name }}</a>.</h2>
+  <h2>I'm <a href="/">{{ site.theme.name }}</a>.</h2>
   <hr/>
-  <ul>
-  <p><i class="icon-info-sign"></i>  UX Assoc. at BrightQuant
-  <br/><i class="icon-globe"></i>  Cambridge, MA via NYC</p>
-  <p>I'm an amateur hustler, hipster and hacker, currently offering some cool services to nonprofits and social good organizations. I also write and make art.</p>
 
-  <p>{% for post in site.categories.special %}
-<i class="icon-star"></i> <a href="{{ post.url }}"> {{ post.title }}</a><br>{% endfor %}</p>
-
-  <div>
-    <div id="social">
-      {% include social.html %}
-    </div>
+  <div class="currently">
+    <p>Recent grad with big civic hacking dreams. Life is <span style="cursor:help; text-decoration: underline;" title="User Experience. The quality of your overall experience while making use of... something... ">UX</span>.</p>
+    <center><i class="icon-heart"></i> web design, human rights, writing, data visualization, information design, geography, long walks, subversion</center> 
   </div>
-  </ul>
+  
+  <hr/>
+    <ul class="links">
+    <!-- This is my hack to highlight nav items based on matching the urls.. works on URLs that are deeper than 2nd level -->
+    {% assign url = page.url | split: '/' %}
+    {% assign url = url[1] %}
+    {% assign url = url | prepend: '/' | append: '/' %}
+    {% for link in site.navigation %}
+      <li {% if url == link.url %}class="current"{% endif %}>
+        <a href="{{ link.url }}"><i class="{{ link.icon }}"></i> {{ link.text }} 
+          </a>
+      </li>
+    {% endfor %}
+    </ul>
+  <hr/>
+  
+  {% include social.html %}
 </nav>

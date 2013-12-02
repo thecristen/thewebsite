@@ -1,5 +1,22 @@
+<div id="social">
+<!-- {% if site.theme.social.email %}
+<br>I use email  
+<div id="stalker">
+<a title="Send email to {{ site.theme.social.email }}" href="mailto:{{site.theme.social.email}}">
+  <i class="icon-envelope"></i>
+</a>
+</div>
+{% endif %}
+ -->
+<!-- <br> -->
 Find me:
 <div id="stalker">
+  {% if site.theme.social.twitter %}
+  <a title="{{ site.theme.social.twitter }} on Twitter" href="http://twitter.com/{{ site.theme.social.twitter }}">
+    <i class="icon-twitter-sign"></i>
+  </a>
+  {% endif %} 
+
   {% if site.theme.social.linkedin %}
   <a title="{{ site.theme.social.linkedin }} on LinkedIn" href="http://www.linked.com/in/{{site.theme.social.linkedin}}">
     <i class="icon-linkedin-sign"></i>
@@ -18,12 +35,6 @@ Find me:
   </a>
   {% endif %}
 
-  {% if site.theme.social.twitter %}
-  <a title="{{ site.theme.social.twitter }} on Twitter" href="http://twitter.com/{{ site.theme.social.twitter }}">
-    <i class="icon-twitter-sign"></i>
-  </a>
-  {% endif %}
-
   {% if site.theme.social.skype %}
   <a title="{{ site.theme.social.skype }} on Skype" href="skype:{{site.theme.social.skype }}?userinfo">
     <i class="icon-skype"></i>
@@ -35,18 +46,12 @@ Find me:
     <i class="icon-flickr"></i>
   </a>
   {% endif %}
+</div> 
 
-  <hr/>
-  {% if site.theme.social.email %}
-  <a title="Send email to {{ site.theme.social.email }}" href="mailto:{{site.theme.social.email}}">
-    <i class="icon-envelope"></i>
-  </a>
-  {% endif %}
-
-  <a title="RSS feed (Atom)" id="rss" href="/atom.xml">
+<br>Subscribe to updates via RSS 
+<div id="stalker">
+  <a title="RSS feed" id="rss" href="/rss.xml">
     <i class="icon-rss-sign"></i>
   </a>
-  <a title="RSS feed" id="rss2" href="/rss.xml">
-    <i class="icon-rss-sign"></i>
-  </a>
+</div>
 </div>

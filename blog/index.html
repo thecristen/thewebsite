@@ -1,35 +1,37 @@
 ---
 layout: default
+title: Blog
 ---
 
-<div id="home">
-<h2><i class="icon-bullhorn"></i> Fresh blog entries</h2>
-  <ul id="blog-posts" class="posts">
-    {% for post in site.categories.blog limit:3 %}
-      <li><span>{{ post.date | date_to_string }}</span><a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
+<!-- This loops through the paginated posts -->
+{% for post in paginator.posts %}
 
-  <h2><i class="icon-pencil"></i> Latest essays</h2>
-  <ul id="book-posts" class="posts">
-    {% for post in site.categories.essays limit:5 %}
-      <li><span>{{ post.date | date_to_string }}</span><a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
+<p class="meta">
+  {{ post.date | date: "%B %d, %Y" }} 
+  <a href="{{ post.url }}#disqus_thread"></a>
+</p>
 
-  <h2><i class="icon-beaker"></i> Current projects</h2>
+<h1 class="title"><a href="{{ post.url }}">{{ post.title }}</a></h1>
 
-  {% for post in site.categories.projects %}
-  <div class="projcaption">
-        <a title="{{ post.title }}" href="{{ post.url }}"><img src="{{post.thumb}}" class="artthumb project" alt="{{ post.title }}"></a><br>
-<caption>{{ post.title }}</caption>
+<div id="post">
+  {{ post.excerpt }}
+  <a href="{{ post.url }}">&raquo; Continue reading</a>
 </div>
-  {% endfor %}
 
+<hr/> 
+{% endfor %}
 
-
-  <h2><i class="icon-picture"></i> Recent works of art</h2>
-    {% for post in site.categories.art %}       
-        <a title="{{ post.title }}" href="{{ post.url }}"><img src="{{post.thumb}}" class="artthumb" alt="{{ post.title }}"></a>
-    {% endfor %}
+<!-- Pagination links -->
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
+  {% else %}
+    <span class="previous">Previous</span>
+  {% endif %}
+  <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+  {% else %}
+    <span class="next ">Next</span>
+  {% endif %}
 </div>

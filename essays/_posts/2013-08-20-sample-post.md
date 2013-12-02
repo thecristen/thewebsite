@@ -1,6 +1,8 @@
 ---
 layout: post
 title: "The Motivation Hacker"
+category: essays
+permalink: /essays/motivation-hacker
 ---
 
 Somehting

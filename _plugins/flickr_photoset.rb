@@ -26,7 +26,7 @@ module Jekyll
       @photoset       = params[0]
       @photoThumbnail = params[1] || "Large Square"
       @photoEmbeded   = params[2] || "Medium 800"
-      @photoOpened    = params[3] || "Large"
+      @photoOpened    = params[3] || "Medium"
       @video          = params[4] || "Site MP4"
     end
 
@@ -60,39 +60,21 @@ module Jekyll
           output += "  <video controls poster=\"#{photos[0]['urlEmbeded']}\">\n"
           output += "    <source src=\"#{photos[0]['urlVideo']}\" type=\"video/mp4\" />\n"
           output += "  </video>\n"
-          output += "  <br/><span class=\"alt-flickr\"><a href=\"#{photos[0]['urlFlickr']}\" target=\"_blank\">Voir la video en grand</a></span>\n"
           output += "</p>\n"
         else
           output = "<p style=\"text-align: center;\"><img class=\"th\" src=\"#{photos[0]['urlEmbeded']}\" title=\"#{photos[0]['title']}\" longdesc=\"#{photos[0]['title']}\" alt=\"#{photos[0]['title']}\" /></p>\n"
         end
       else
-        # output = "    <ul class=\"arts\">\n"
 
-        # photos.each do |photo|
-        #   if photo['urlVideo'] != ''
-        #     output += "      <li>\n"
-        #     output += "        <video controls poster=\"#{photo['urlEmbeded']}\">\n"
-        #     output += "          <source src=\"#{photo['urlVideo']}\" type=\"video/mp4\" />\n"
-        #     output += "        </video>\n"
-        #     output += "        <br/><span class=\"alt-flickr\"><a href=\"#{photo['urlFlickr']}\" target=\"_blank\">Voir la video en grand</a></span>\n"
-        #     output += "      </li>\n"
-        #   else
-        #     output += "      <li><a class=\"th\" href=\"#{photo['urlOpened']}\"><img src=\"#{photo['urlThumb']}\"></a></li>\n"
-        #   end
-        # end
-
-        # output += "    </ul>\n"
-
-        output = "    <div class=\"arts\">\n"
+        output = "    <div class=\"pics\">\n"
 
         photos.each do |photo|
           if photo['urlVideo'] != ''
             output += "        <video controls poster=\"#{photo['urlEmbeded']}\">\n"
             output += "          <source src=\"#{photo['urlVideo']}\" type=\"video/mp4\" />\n"
             output += "        </video>\n"
-            output += "        <br/><span class=\"alt-flickr\"><a href=\"#{photo['urlFlickr']}\" target=\"_blank\">Voir la video en grand</a></span>\n"
           else
-            output += "      <a class=\"th\" href=\"#{photo['urlOpened']}\"><img class=\"arts\" src=\"#{photo['urlThumb']}\"></a>\n"
+            output += "      <a class=\"th\" href=\"#{photo['urlOpened']}\"><img class=\"pics\" src=\"#{photo['urlThumb']}\"></a>\n"
           end
         end
 

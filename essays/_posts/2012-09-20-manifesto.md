@@ -1,6 +1,8 @@
 ---
 layout: post
 title: "A biographical manifesto"
+category: essays
+permalink: /essays/manifest
 ---
 
 I am a civic social entrepreneur. I'm interested in fixing how we interact with government in order to improve our lives and the world we inhabit. I'm particularly interested in helping populations that are currently systematically underserved by our society and its systems.
