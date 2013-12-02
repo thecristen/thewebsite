@@ -1,15 +1,24 @@
 ---
 layout: default
 ---
+<div class="projectpic" style="background-image: url(http://localhost:4000{{page.thumb}})"></div>
 
-<h1 class="title">{{ page.title }}</h1>
-<p class="meta">Posted {{ page.date | date: "%B %d, %Y" }} </p>
-<p>
-  {% for item in page.tags %}
-  <a href="{{site.url}}/projects/{{item}}">{{ item }}</a>
-  {% endfor %}
-</p>
+<h1 class="posttitle">{{ page.title }} </h1>
+<span class="date"><i class='icon-calendar'></i> &nbsp; {{ page.date | date: "%B %d, %Y" }}</span>
 
-<div id="post">
-  <img src="{{page.thumb}}" class="project pic" alt="{{ page.title }}">{{ content }}
+
+ 	
+  		<!-- links to external page if one is defined -->
+  		{% if page.external == blank or page.external == nil  %}
+  		{% else %}
+  		<h3><a href="{{ page.external }}">External link &nbsp; <i class="icon-long-arrow-right"></i></a></h3>
+  		{% endif %}
+  	
+
+
+<div class="post">
+
+ 
+
+  {{ content }}
 </div>

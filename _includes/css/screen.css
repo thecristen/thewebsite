@@ -294,10 +294,6 @@ font-size:14px;
   -webkit-border-radius: 100px;
   -moz-border-radius: 100px;
 }
-/*
-.project p {
-  font-size:14px;
-}*/
 
 .clearfloat {
   clear: both;
@@ -316,15 +312,26 @@ font-size:14px;
   display:block;
 }
 
+.post {
+  margin-top:10px;
+  margin-bottom:20px
+  border-bottom: 1px solid #eee;
+}
+
 .post-item {
   padding: 10px 0px 20px 0px;
   margin-bottom: 10px;
   border-bottom: 1px dotted #ddd;
 }
 
-span.essayheadline {
+.essayheadline {
   font-style: italic;
-  margin-top: -6px;
+}
+
+div.essayheadline {
+  font-style: italic;
+  font-size:20px;
+  margin-top:14px;
 }
 
 span.date {
@@ -336,7 +343,7 @@ div.excerpt p {
   margin-bottom:0;
 }
 
-h2.posttitle {
+.posttitle {
   margin-bottom:4px;
   margin-top:-4px;
 }

@@ -2,13 +2,15 @@
 layout: default
 ---
 
-<p class="meta">
-  {{ page.date | date: "%B %d, %Y" }} 
-</p>
+<h1 class="posttitle">{{ page.title }} </h1>
+<span class="date"><i class='icon-calendar'></i> &nbsp; {{ page.date | date: "%B %d, %Y" }} &nbsp; <i class='icon-comments-alt'></i> &nbsp; <a href="{{ post.url }}#disqus_thread"></a></span>
 
-<h1 class="title">{{ page.title }}</h1>
-<h2 class="headline">{{ page.headline }}</h2>
-<div id="post">
+{% if page.headline == blank or page.headline == nil  %}
+{% else %}
+<div class="essayheadline">{{ page.headline }}</div>
+{% endif %}
+
+<div class="post">
   {{ content }}
 </div>
 

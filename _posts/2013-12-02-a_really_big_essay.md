@@ -2,7 +2,6 @@
 layout: post
 title: A really big essay
 category: essays
-headline: Nam tincidunt erat at turpis tincidunt iaculis. Curabitur cursus ipsum in elit mattis, ut semper dui rutrum. Morbi feugiat nunc eu leo ultrices, nec aliquet felis egestas. 
 permalink: /essays/a_really_big_essay
 ---
 
