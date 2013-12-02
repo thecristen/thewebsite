@@ -17,7 +17,7 @@
   print message
   STDIN.gets.chomp
   end
-  posttype = ask('Type? [b]log,[e]ssay,[p]roject,[a]rt: ')
+  posttype = ask('Type? [b]log,[e]ssay,[p]roject: ')
 
   #Create new a post
   desc "Default 'rake' command creates a new post"
@@ -26,32 +26,13 @@
     path = File.join("_posts", filename)
     if File.exist? path; raise RuntimeError.new("File exists #{path}"); end
     File.open(path, 'w') do |file|
-    if posttype == 'b'
+    if posttype == 'e'
       file.write <<-EOS
 ---
 layout: post
 title: #{title}
-categories: blog #{Time.now.strftime('%Y')} #{Time.now.strftime('%m')}
----
-
-
-      EOS
-    elsif posttype == 'e'
-      file.write <<-EOS
----
-layout: post
-title: #{title}
----
-
-
-      EOS
-    elsif posttype == 'a'
-      file.write <<-EOS
----
-layout: art
-title: #{title}
-thumb: /assets/img/addimage.png
-fullimg: /assets/img/addimage-full.png
+category: essays
+permalink: /essays/#{title.gsub(/\s/, '_').downcase}
 ---
 
 
@@ -61,7 +42,10 @@ fullimg: /assets/img/addimage-full.png
 ---
 layout: project
 title: #{title}
-thumb: /assets/img/addprojectimg.png
+category: projects
+permalink: /projects/#{title.gsub(/\s/, '_').downcase}
+thumb: /assets/img/ADDFILE
+external: http://ADDURL
 ---
 
 
@@ -72,6 +56,7 @@ thumb: /assets/img/addprojectimg.png
 ---
 layout: post
 title: #{title}
+category: blog
 ---
 
 

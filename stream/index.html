@@ -4,6 +4,7 @@ title: Blog
 ---
 
 <!-- This loops through the paginated posts -->
+{% for post in site.categories.blog %}
 {% for post in paginator.posts %}
 
 <p class="meta">
@@ -19,8 +20,9 @@ title: Blog
 </div>
 
 <hr/> 
-{% endfor %}
 
+{% endfor %}
+{% endfor %}
 <!-- Pagination links -->
 <div class="pagination">
   {% if paginator.previous_page %}

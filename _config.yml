@@ -7,24 +7,24 @@ exclude: [LICENSE, CNAME, Rakefile, Gemfile, README.md, .gitignore]
 include: [.htaccess]
 timezone: America/New_York
 #permalink: /:categories/:title/
-permalink: /blog/:title/
+permalink: /stream/:title/
 paginate: 13
-paginate_path: '/blog/:num/'
+paginate_path: '/stream/:num/'
 
 #custom navigation, with associated font-awesome icons (3.2)
 navigation:
 - text: projects
   url: /projects/
   icon: icon-beaker
-- text: live blog
-  url: /blog/
-  icon: icon-bullhorn
 - text: longer writing
   url: /essays/
   icon: icon-pencil
 - text: arbitrary art
   url: /art/
   icon: icon-picture
+- text: all updates
+  url: /stream/
+  icon: icon-bullhorn
 
 # Theme customization - please change from the defaults!
 theme:
