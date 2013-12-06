@@ -24,7 +24,6 @@ body {
 }
 
 a:hover#menu-icon {
-
   background-color: #444;
   border-radius: 4px 4px 0 0;
 
@@ -300,6 +299,20 @@ font-size:14px;
   width:200px;
   height:200px;
   background-size: cover;
+  float:right;
+  margin: 0px;
+  margin-left:15px;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+}
+
+.projectpicsmall {
+  background-repeat: no-repeat;
+  width:100px;
+  height:100px;
+  background-size: cover;
+  display:none;
   float:right;
   margin: 0px;
   margin-left:15px;

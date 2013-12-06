@@ -14,6 +14,7 @@
 		margin-bottom: 15px; }
 	nav .button {
 		padding: 9px 20px 11px; }
+
 }
 
 /* Tablet Portrait size to standard 960 (devices and browsers) */
@@ -23,6 +24,7 @@
 	.sidebar h2 {
 		font-size: 18px;
 	}
+
 
 	.sidebar ul {
 		font-size: 14px;
@@ -38,6 +40,14 @@
 	
 	header, .currently, #social {
 		display: none;
+	}
+
+	.projectpicsmall {
+		display:inline-block;
+	}
+
+	.projectpic {
+	  display: none;
 	}
 
 	.smallheader {
@@ -56,12 +66,25 @@
 		border: 0px;
 		padding-left: 0px;
 	}
+
+	.projectpic {
+		width:100px;
+		height:100px;
+	}
 }
 
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
 	header, .currently, #social {
 		display: none;
+	}
+
+	.projectpicsmall {
+		display:inline-block;
+	}
+
+	.projectpic {
+	  display: none;
 	}
 
 	.smallheader {
@@ -80,12 +103,25 @@
 		font-size: 28px;
 		line-height: 36px;
 	}
+
+	.projectpic {
+		width:100px;
+		height:100px;
+	}
 }
 
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media only screen and (max-width: 479px) {
 	header, .currently, #social {
 		display: none;
+	}
+
+	.projectpicsmall {
+		display:inline-block;
+	}
+
+	.projectpic {
+	  display: none;
 	}
 
 	.smallheader {
@@ -104,5 +140,10 @@
 	h2 {
 		font-size: 22px;
 		line-height: 24px;
+	}
+
+	.projectpic {
+		width:75px;
+		height:75px;
 	}
 }
