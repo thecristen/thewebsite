@@ -45,7 +45,7 @@ layout: project
 title: #{title}
 category: projects
 permalink: /projects/#{title.gsub(/\s/, '_').downcase}
-thumb: /assets/img/ADDFILE
+thumb: /assets/img/thumbs/ADDFILE
 external: http://ADDURL
 ---
 
