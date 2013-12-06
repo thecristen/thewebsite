@@ -1,19 +1,65 @@
 <nav>
+<header>
   <h1>Hi.</h1>
   <a href="/">
     <img src="/logo.png" id="logo" alt="logo for cristen jones's website"/>
   </a>
   <h2>I'm <a href="/">{{ site.theme.name }}</a>.</h2>
   <hr/>
+</header>
+
+  <div class="smallheader">
+   <a href="#top" id="menu-icon"><i class="icon-circle-arrow-down"></i> Cristen Jones</a> 
+    <div id="stalker">
+      {% if site.theme.social.twitter %}
+      <a title="{{ site.theme.social.twitter }} on Twitter" href="http://twitter.com/{{ site.theme.social.twitter }}">
+      <i class="icon-twitter-sign"></i>
+      </a>
+      {% endif %} 
+
+      {% if site.theme.social.linkedin %}
+      <a title="{{ site.theme.social.linkedin }} on LinkedIn" href="http://www.linked.com/in/{{site.theme.social.linkedin}}">
+      <i class="icon-linkedin-sign"></i>
+      </a>
+      {% endif %}
+
+      {% if site.theme.social.github %}
+      <a title="{{ site.theme.social.github }} on Github" href="http://github.com/{{ site.theme.social.github }}">
+      <i class="icon-github-sign"></i>
+      </a>
+      {% endif %}
+
+      {% if site.theme.social.foursquare %}
+      <a title="{{ site.theme.social.foursquare }} on Foursquare" href="http://foursquare.com/{{site.theme.social.foursquare }}">
+      <i class="icon-foursquare"></i>
+      </a>
+      {% endif %}
+
+      {% if site.theme.social.skype %}
+      <a title="{{ site.theme.social.skype }} on Skype" href="skype:{{site.theme.social.skype }}?userinfo">
+      <i class="icon-skype"></i>
+      </a>
+      {% endif %}
+
+      {% if site.theme.social.flickr %}
+      <a title="{{ site.theme.social.flickr }} on Flickr" href="http://www.flickr.com/people/{{site.theme.social.flickr}}">
+      <i class="icon-flickr"></i>
+      </a>
+      {% endif %}
+      
+    </div> 
+  <hr />
+  </div>
 
   <div class="currently">
     
-    <center>
+  <center>
       <p>Recent grad with big dreams.<br> Life is <span style="cursor:help; text-decoration: underline;" title="User Experience. The quality of your overall experience while making use of... something... ">UX</span>.</p>
       <i class="icon-heart"></i> &nbsp; web design, human rights, writing, data visualization, information design, geography, long walks, subversion</center> 
+      <hr/>
   </div>
   
-  <hr/>
+  
     <ul class="links">
     <!-- This is my hack to highlight nav items based on matching the urls.. works on URLs that are deeper than 2nd level -->
     {% assign url = page.url | split: '/' %}

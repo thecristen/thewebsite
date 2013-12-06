@@ -35,9 +35,23 @@
 	nav { position: relative; }
 	nav ul,
 	#logo { text-align: left; }
-	.sidebar {
+	
+	header, .currently, #social {
 		display: none;
 	}
+
+	.smallheader {
+		display: block;
+	}
+
+	#menu-icon {
+		display:inline-block;
+	}
+
+	div.four.columns.sidebar {
+		float:none;
+	}
+
 	.content {
 		border: 0px;
 		padding-left: 0px;
@@ -46,8 +60,20 @@
 
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-	.sidebar {
+	header, .currently, #social {
 		display: none;
+	}
+
+	.smallheader {
+		display: block;
+	}
+
+	#menu-icon {
+		display:inline-block;
+	}
+
+	div.four.columns.sidebar {
+		float:none;
 	}
 
 	h1 {
@@ -58,8 +84,16 @@
 
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media only screen and (max-width: 479px) {
-	.sidebar {
+	header, .currently, #social {
 		display: none;
+	}
+
+	.smallheader {
+		display: block;
+	}
+
+	#menu-icon {
+		display:inline-block;
 	}
 
 	h1 {

@@ -9,6 +9,27 @@ body {
   border-top: 7px solid {{ site.theme.highlight_color }};
 }
 
+.smallheader {
+    padding-top:20px;
+    margin-bottom:-10px;
+    display: none;
+  }
+
+.smallheader > #stalker  {
+  float:right;
+}
+
+#menu-icon {
+  display: hidden;
+}
+
+a:hover#menu-icon {
+
+  background-color: #444;
+  border-radius: 4px 4px 0 0;
+
+}
+
 h1, h2, h3, h4, h5, h6 {
   color: #181818;
   font-family: "source-sans-pro", sans-serif;
@@ -171,7 +192,6 @@ nav hr {
 
 .sidebar {
   padding-top: 25px;
-  position: fixed;
 }
 
 .sidebar p {
