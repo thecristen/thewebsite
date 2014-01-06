@@ -15,9 +15,9 @@ navigation:
 - text: projects
   url: /projects/
   icon: icon-beaker
-- text: longer writing
-  url: /essays/
-  icon: icon-pencil
+# - text: longer writing
+#   url: /essays/
+#   icon: icon-pencil
 - text: arbitrary art
   url: /art/
   icon: icon-picture
