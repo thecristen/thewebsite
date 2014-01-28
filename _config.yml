@@ -12,18 +12,16 @@ paginate_path: '/stream/:num/'
 
 #custom navigation, with associated font-awesome icons (3.2)
 navigation:
-- text: projects
-  url: /projects/
+- text: works in progress
+  url: /
   icon: icon-beaker
-# - text: longer writing
-#   url: /essays/
-#   icon: icon-pencil
+# - text: about me
+#   url: /about/
+#   icon: icon-pencil  
 - text: arbitrary art
   url: /art/
   icon: icon-picture
-- text: all updates
-  url: /stream/
-  icon: icon-bullhorn
+
 
 # Theme customization - please change from the defaults!
 theme:

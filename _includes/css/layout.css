@@ -42,12 +42,24 @@
 		display: none;
 	}
 
-	.projectpicsmall {
-		display:inline-block;
+	.project {
+		display:inline;
+		text-align:center;
+	}
+
+	.project:hover {
+		width:inherit;
 	}
 
 	.projectpic {
-	  display: none;
+	  height:100px;
+	  width:100px;
+	  display:visible;
+	  margin: 0 auto;
+	}
+
+	div.description {
+		height:inherit!important;
 	}
 
 	.smallheader {
@@ -66,11 +78,6 @@
 		border: 0px;
 		padding-left: 0px;
 	}
-
-	.projectpic {
-		width:100px;
-		height:100px;
-	}
 }
 
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
@@ -79,12 +86,24 @@
 		display: none;
 	}
 
-	.projectpicsmall {
-		display:inline-block;
+	.project {
+		display:inline;
+		text-align:center;
+	}
+
+	.project:hover {
+		width:inherit;
 	}
 
 	.projectpic {
-	  display: none;
+	  height:100px;
+	  width:100px;
+	  display:visible;
+	  margin: 0 auto;
+	}
+
+	div.description {
+		height:inherit!important;
 	}
 
 	.smallheader {
@@ -103,11 +122,6 @@
 		font-size: 28px;
 		line-height: 36px;
 	}
-
-	.projectpic {
-		width:100px;
-		height:100px;
-	}
 }
 
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
@@ -116,12 +130,24 @@
 		display: none;
 	}
 
-	.projectpicsmall {
-		display:inline-block;
+	.project {
+		display:inline;
+		text-align:center;
+	}
+
+	.project:hover {
+		width:inherit;
 	}
 
 	.projectpic {
-	  display: none;
+	  height:100px;
+	  width:100px;
+	  display:visible;
+	  margin: 0 auto;
+	}
+
+	div.description {
+		height:inherit!important;
 	}
 
 	.smallheader {
@@ -142,8 +168,4 @@
 		line-height: 24px;
 	}
 
-	.projectpic {
-		width:75px;
-		height:75px;
-	}
 }

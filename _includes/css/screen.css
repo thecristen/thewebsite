@@ -83,10 +83,7 @@ div.currently {
 div.intro {
   background-color:#EEE;
   padding:20px;
-  text-align: center;
-  font-size: 14px;
-  font-style: italic;
-  margin-bottom: 20px;
+  margin-top:20px;
 }
 
 ul.links {
@@ -203,7 +200,6 @@ nav hr {
 
 .content {
   border-left: 1px solid #DDD;
-  padding-left: 40px;
   padding-top: 25px;
   min-height: 400px;
   float:right;
@@ -288,38 +284,35 @@ nav hr {
   color: white;
 }
 
+span.intro {
+  font-size:24px;
+  margin-right:12px;
+  font-weight:bold;
+}
+
 
 .project {
-padding:10px;
 font-size:14px;
+  width:100px;
+display: inline-block;
 }
+
+div.description {
+  padding:10px;  
+  margin:0px;  
+  height:100px!important;
+}  
+
 
 .projectpic {
   background-repeat: no-repeat;
-  width:200px;
   height:200px;
-  background-size: cover;
-  float:right;
-  margin: 0px;
-  margin-left:15px;
-  border-radius: 100px;
-  -webkit-border-radius: 100px;
-  -moz-border-radius: 100px;
 }
 
-.projectpicsmall {
-  background-repeat: no-repeat;
-  width:100px;
-  height:100px;
-  background-size: cover;
-  display:none;
-  float:right;
-  margin: 0px;
-  margin-left:15px;
-  border-radius: 100px;
-  -webkit-border-radius: 100px;
-  -moz-border-radius: 100px;
+.project:hover {
+  width:200px;
 }
+
 
 .clearfloat {
   clear: both;

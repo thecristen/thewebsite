@@ -1,0 +1,33 @@
+---
+layout: default
+title: Projects
+---
+<div class="intro"><span class="intro">Data Swap 2013</span> I'm part of <a href="http://www.dataswap2013.com">this initiative</a> by <a href="http://lab.bostonglobe.com/">The Globe Lab</a> that lets me play with large-scale datasets! Stay tuned.</div>
+
+
+{% for post in site.categories.dataswap %}
+<div class="project">
+  <div class="projectpic" style="background-image: url(..{{post.thumb}})">
+  </div><div class="description"><a href="{{ post.external }}">{{ post.title }}</a></div>
+  <br class="clearfloat">
+</div> 
+{% endfor %}
+
+
+<div class="intro"><span class="intro">Random hacking around</span> Exactly what it sounds like. These are random things I've made or contributed to while I learn.</div>
+{% for post in site.categories.hacking %}
+<div class="project">
+  <div class="projectpic" style="background-image: url(..{{post.thumb}})">
+  </div><div class="description"><a href="{{ post.external }}">{{ post.title }}</a></div>
+  <br class="clearfloat">
+</div> 
+{% endfor %}
+
+<div class="intro"><span class="intro">School projects</span> I worked for years to become the first in my family to get a college degree, and then a masters degree, and all I got were some fancy diplomas and a few cool projects... </div>
+{% for post in site.categories.school %}
+<div class="project">
+  <div class="projectpic" style="background-image: url(..{{post.thumb}})">
+  </div><div class="description"><a href="{{ post.external }}">{{ post.title }}</a></div>
+  <br class="clearfloat">
+</div> 
+{% endfor %}
